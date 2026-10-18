@@ -142,6 +142,7 @@ document.addEventListener("dragstart", (event) => {
 
   function renderPreWeddingEvents() {
     const eventList = select("#preWeddingEvents");
+    if (!eventList || !config.preWeddingEvents?.length) return;
 
     config.preWeddingEvents.forEach((event, index) => {
       const article = createElement("article");
@@ -159,6 +160,7 @@ document.addEventListener("dragstart", (event) => {
 
   function renderDressPalette() {
     const palette = select("#dressPalette");
+    if (!palette || !config.dressCode?.swatches) return;
 
     config.dressCode.swatches.forEach((color, index) => {
       const swatch = createElement("i");
@@ -175,6 +177,9 @@ document.addEventListener("dragstart", (event) => {
   function renderGallery() {
     const slides = select("#gallerySlides");
     const dots = select("#galleryDots");
+    const frame = select("#galleryFrame");
+
+    if (!slides || !dots || !frame || !config.media?.gallery?.length) return;
 
     config.media.gallery.forEach((image, index) => {
       const figure = createElement(
@@ -196,8 +201,6 @@ document.addEventListener("dragstart", (event) => {
       dot.addEventListener("click", () => showSlide(index));
       dots.append(dot);
     });
-
-    const frame = select("#galleryFrame");
 
     frame.addEventListener("touchstart", (event) => {
       touchStartX = event.touches[0].clientX;
@@ -472,6 +475,7 @@ audio.play()
   }
 
   function initializeCountdown() {
+    if (!select("#countdownDays")) return;
     const targetDate = new Date(config.wedding.isoDate).getTime();
 
     function updateCountdown() {

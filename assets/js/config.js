@@ -7,25 +7,25 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Fatima & Ibrahim — Nikah Invitation",
+    title: "Namra & Osama — Nikah Invitation",
     description:
-      "You are warmly invited to celebrate the Nikah of Fatima Aisha and Ibrahim Ahmed.",
+      "You are warmly invited to celebrate the Nikah of Namra Akbani and Osama Akbani.",
   },
 
   couple: {
-    brideInitial: "Z",
-    groomInitial: "Z",
+    brideInitial: "N",
+    groomInitial: "O",
     bride: {
-      name: "Zoya Khan",
-      shortName: "Zoya",
-      relation: "Daughter of",
-      parents: "Rashid Khan & Farida Begum",
+      name: "Namra Akbani",
+      shortName: "Namra",
+      relation: "D/o",
+      parents: "Haji Mohd Iqbal Akbani & Khairunnisa Akbani",
     },
     groom: {
-      name: "Shaikh Zaid",
-      shortName: "Zaid",
+      name: "Osama Akbani",
+      shortName: "Osama",
       relation: "Son of",
-      parents: "Shaikh Tariq & Shabana Begum",
+      parents: "Haji Mohd Rashid Akbani & Sharifa Akbani",
     },
   },
 
@@ -40,7 +40,7 @@ window.INVITATION_CONFIG = {
       "as they begin their forever in faith and love.",
     welcomeTitle: "A love written in dua",
     welcomeBody:
-      "With the blessings of Allah Subhanahu Wa Ta’ala, Zoya and Zaid invite you to share in the joy of their union — a day of gratitude, family, and beautiful beginnings.",
+      "With the blessings of Allah Subhanahu Wa Ta’ala, Namra and Osama invite you to share in the joy of their union — a day of gratitude, family, and beautiful beginnings.",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
     closing: "We can’t wait to celebrate with you.",
@@ -51,10 +51,10 @@ window.INVITATION_CONFIG = {
 
   wedding: {
     // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2026-09-30T10:00:00+05:30",
-    date: "September 30, 2026",
-    day: "Wednesday",
-    time: "10:00 AM",
+    isoDate: "2026-12-25T19:00:00+05:30",
+    date: "December 25, 2026",
+    day: "Friday",
+    time: "Dawat-e-Nikah at 7:00 PM",
     timezone: "IST",
   },
 
@@ -63,7 +63,7 @@ window.INVITATION_CONFIG = {
     introVideo: "./media/intro-placeholder.mp4",
     introPoster:
       "./media/intro-placeholder.webp",
-    music: "./media/bismillah.mp3",
+    music: "./media/sakina.mp3",
 
     // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
@@ -92,67 +92,31 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
-      time: "9:30 AM",
-      title: "Guest Arrival",
-      note: "Welcome refreshments",
+      time: "After Jumah",
+      title: "Nikah",
+      note: "At Masjid-e-Mustafa",
     },
     {
-      time: "10:00 AM",
-      title: "Nikah Ceremony",
-      note: "Solemnisation & duas",
-    },
-    {
-      time: "11:15 AM",
-      title: "Blessings",
-      note: "Family greetings & photographs",
-    },
-    {
-      time: "12:00 PM",
-      title: "Walima Luncheon",
-      note: "A feast shared with love",
+      time: "7:00 PM",
+      title: "Dawat-e-Nikah",
+      note: "Dinner at Canal Garden",
     },
   ],
 
   venue: {
-    name: "Noor Invites",
+    name: "Canal Garden",
     address:
-      "Mahal, Nagpur",
-    mapUrl: "https://maps.google.com/?q=Mahal+Nagpur",
+      "Kalamna Road, Kamptee, Nagpur",
+    mapUrl: "https://share.google/KDmuUbhSpXMxtP1zG",
   },
 
   dressCode: {
-    title: "Pastels & Jewel Tones",
-    description:
-      "Traditional or formal attire in soft pastels, mauve, plum, sage, or champagne. We kindly request modest silhouettes and invite you to dress in what makes you feel beautiful.",
-    swatches: ["#d8c7df", "#a883a5", "#673c64", "#d8c9a5", "#9aa78f"],
+    title: "",
+    description: "",
+    swatches: [],
   },
 
-  preWeddingEvents: [
-    {
-      name: "Mehendi",
-      date: "September 27",
-      time: "4:00 PM",
-      location: "Bride’s Residence",
-    },
-    {
-      name: "Haldi",
-      date: "September 28",
-      time: "10:30 AM",
-      location: "The Courtyard",
-    },
-    {
-      name: "Qawwali Evening",
-      date: "September 29",
-      time: "7:00 PM",
-      location: "Noor Garden Pavilion",
-    },
-    {
-      name: "Family Dinner",
-      date: "September 29",
-      time: "9:00 PM",
-      location: "The Jasmine Room",
-    },
-  ],
+  preWeddingEvents: [],
 
   rsvp: {
     deadline: "Kindly respond by September 15, 2026",
